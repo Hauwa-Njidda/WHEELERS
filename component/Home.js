@@ -5,6 +5,11 @@ export default function Register() {
     return (
       <SafeAreaView style={styles.container}>
 
+
+<View style = {styles.containersicon}>
+<Image style={styles.icon} source={require("/Users/hauwakulunjidda/WHEELERS/assets/bell.png")} />
+<Image style={styles.icon} source={require("/Users/hauwakulunjidda/WHEELERS/assets/profilee.png")} />
+</View>
         <Text style={styles.Text1 } >Explore and </Text>
         <Text style={styles.Text1}>Experience</Text>      
           <Text style={styles.Text2}>Discover our best experience</Text>
@@ -48,7 +53,7 @@ containersicon}>
 <Text style={styles.columnText1} allowFontScaling={false}>View all</Text>
 
 </View>
-<Text style={styles.columnText} allowFontScaling={false}>-----------------------------------------------------------</Text>
+
 </ScrollView>
 
 <ScrollView vertical={true}>
@@ -57,25 +62,47 @@ containersicon}>
 {require('/Users/hauwakulunjidda/WHEELERS/assets/kids_bike_club.jpeg')} style={styles.imageshape2}/>
 <Text style={styles.columnText} allowFontScaling={false}>Join Community</Text>
 <Text style={styles.columnText} allowFontScaling={false}>120 Members</Text>
-<View style = {styles.containersicon11}>
-<Text style={styles.columnText1} allowFontScaling={false}>View all</Text>
-</View>
+
+<Text style={styles.columnText1} allowFontScaling={false}>Join</Text>
+
 </View>
 <View style = {styles.containersicon1}>
 <Image source =
 {require('/Users/hauwakulunjidda/WHEELERS/assets/kids_bike_club.jpeg')} style={styles.imageshape2}/>
 <Text style={styles.columnText} allowFontScaling={false}>Join Community</Text>
 <Text style={styles.columnText} allowFontScaling={false}>120 Members</Text>
-<View style = {styles.containersicon11}>
-<Text style={styles.columnText1} allowFontScaling={false}>View all</Text>
+
+<Text style={styles.columnText1} allowFontScaling={false}>Join</Text>
+
 </View>
-</View>
+
 </ScrollView>
 
+
+
+<View style = {styles.containersicon1}>
+<Image style={styles.icon} source={require("/Users/hauwakulunjidda/WHEELERS/assets/images.jpeg")} />
+<Image style={styles.icon} source={require("/Users/hauwakulunjidda/WHEELERS/assets/download.png")} />
+<Image style={styles.icon} source={require("/Users/hauwakulunjidda/WHEELERS/assets/play.png")} />
+<Image style={styles.icon} source={require("/Users/hauwakulunjidda/WHEELERS/assets/group.jpeg")} />
+<Image style={styles.icon} source={require("/Users/hauwakulunjidda/WHEELERS/assets/profilee.png")} />
+
+</View>
       </SafeAreaView>
+
+
+
+
+
       
  );
+
+
+
     }
+
+
+
 const styles = StyleSheet.create({
  container:{
   flex: 1,
@@ -85,14 +112,16 @@ const styles = StyleSheet.create({
 },
 Text1:{
 color: 'white',
-fontSize: 40,
-margin: 7,
+fontSize: 35,
+
 fontWeight:'500',
+width: 340,
 },
 Text2:{
   color: 'white',
   fontSize: 15,
-   
+  width: 340,
+   margin : 7,
   },
     Text3:{
       color: 'white',
@@ -100,7 +129,7 @@ Text2:{
     fontWeight:'700',
     paddingHorizontal: 10,
     },
-
+    
   imageshape1:{
   height:220,
   marginTop:10,
@@ -108,7 +137,7 @@ Text2:{
 
 imageshape:{ 
 width:200, 
-height:220,  
+height:200,  
 marginLeft:20,
 borderColor:"white", 
 borderWidth: 1, 
@@ -127,15 +156,16 @@ columnText:{
   color:'white',
   flex: 10,
   alignItems: 'flex-start',
-  paddingLeft: 16,
+  paddingLeft: 15,
 
 },
 columnText1:{
-  color:'blue',
-  alignItems: 'flex-start',
-  paddingLeft: 16,
-
+  color:'white',
+paddingHorizontal: 10,
+  backgroundColor : "blue",
+  padding: 5,
 },
+
 columnText11:{
   color:'blue',
   flex: 10,
@@ -148,9 +178,8 @@ containersicon :{
   flexDirection: 'row',
   justifyContent: 'space-around',
   alignItems :'center',
-  padding: 2,
-  margin: 7,
-  width: 390,
+  padding: 1,
+  width: 370,
   },
 
 
@@ -166,15 +195,28 @@ containersicon :{
   width: 340,
   },
 
-  containersicon11 :{
-    flexDirection: 'row',
-    justifyContent: 'space-around',
-    alignItems :'center',
-    borderWidth : 1,
-    borderColor: 'white',
-    borderRadius: 10,
-    padding: 6,
-    margin: 8,
-    width:70,
-    },
+
+    row: {
+      paddingBottom: 18,  
+      marginBottom: 18,
+      flexDirection: 'row', 
+      alignItems: 'center',    
+      justifyContent: 'space-between',   
+      borderBottomWidth: 1,
+      borderColor: 'rgba(204, 204, 204, 0.49)'
+      
+      },
+      rowText: {
+        flex: 1,
+        fontSize: 13,
+        marginLeft: 15
+        
+        },
+
+        icon: {
+          width: 25,  
+          height: 25,
+          
+          },
+
 })

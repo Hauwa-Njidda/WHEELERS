@@ -5,12 +5,13 @@ import { StyleSheet, Text, View,Image,SafeAreaView } from 'react-native';
 import Login from './component/Login';
 import Register from './component/Register';
 import Home from './component/Home';
+import Search from './component/Search';
 
 export default function App() {
  
   return (
     <View style={styles.container}>         
-          <Home/>
+          <Search/>
     </View>
 )};
 
