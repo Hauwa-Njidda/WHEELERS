@@ -101,4 +101,10 @@ Week 12
 12 Dec 2021
 1 hour meeting the Home Screen
 
+16 Dec 2021
+2 hours meeting the Search Screen
+
+18 Dec 2021
+3 hours doing the Choose,Search and Solo screen
+
 Semester Two

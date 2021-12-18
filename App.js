@@ -6,12 +6,15 @@ import Login from './component/Login';
 import Register from './component/Register';
 import Home from './component/Home';
 import Search from './component/Search';
+import Solorun from './component/Solorun';
+import Choose from './component/Choose';
+import Grouprun from './component/Grouprun';
 
 export default function App() {
  
   return (
     <View style={styles.container}>         
-          <Search/>
+          <Login/>
     </View>
 )};
 
