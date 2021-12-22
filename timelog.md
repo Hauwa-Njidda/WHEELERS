@@ -104,11 +104,12 @@ Week 12
 16 Dec 2021
 2 hours meeting the Search Screen
 
-<<<<<<< HEAD
 18 Dec 2021
 3 hours doing the Choose,Search and Solo screen
 
-=======
->>>>>>> 580a6a4f02dcb12e398312c34bfba40e00f8c5d6
-Semester Two
+20 Dec 2021
+2 hours working on navigation
 
+22 Dec 2021
+2 hours working on the profile, community page
+Semester Two

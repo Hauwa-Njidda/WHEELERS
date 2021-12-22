@@ -1,8 +1,9 @@
 import React from 'react';
 import { Component } from 'react';
 import { StyleSheet, Text, View ,SafeAreaView, Button ,Image, TextInput, TouchableOpacity } from 'react-native';
+import RegisterScreen from '/Users/hauwakulunjidda/WHEELERS/component/Register.js';
 
-export default function Login() {
+export default function LoginScreen({ navigation }) {
  
     return (
       <SafeAreaView style={styles.container}>
@@ -18,7 +19,7 @@ export default function Login() {
             Login
           </Text>
         </TouchableOpacity>
-        <Text style={styles.Text33}>New account? Register</Text>
+        <Button title="New account? Register" onPress={() => navigation.navigate('RegisterScreen')}>New account? Register</Button>
         <Text style={styles.Text4}>Terms and Conditions</Text>
       </SafeAreaView>
  );

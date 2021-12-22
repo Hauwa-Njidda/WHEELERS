@@ -80,14 +80,7 @@ containersicon}>
 
 
 
-<View style = {styles.containersicon1}>
-<Image style={styles.icon} source={require("/Users/hauwakulunjidda/WHEELERS/assets/images.jpeg")} />
-<Image style={styles.icon} source={require("/Users/hauwakulunjidda/WHEELERS/assets/download.png")} />
-<Image style={styles.icon} source={require("/Users/hauwakulunjidda/WHEELERS/assets/play.png")} />
-<Image style={styles.icon} source={require("/Users/hauwakulunjidda/WHEELERS/assets/group.jpeg")} />
-<Image style={styles.icon} source={require("/Users/hauwakulunjidda/WHEELERS/assets/profilee.png")} />
 
-</View>
       </SafeAreaView>
 
 
