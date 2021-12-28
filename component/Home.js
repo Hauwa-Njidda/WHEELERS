@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View ,SafeAreaView, Button ,Image, TextInput, TouchableOpacity,ScrollView } from 'react-native';
 
+
 export default function Home() {
     return (
       <SafeAreaView style={styles.container}>
@@ -75,6 +76,8 @@ containersicon}>
 <Text style={styles.columnText1} allowFontScaling={false}>Join</Text>
 
 </View>
+
+
 
 </ScrollView>
 

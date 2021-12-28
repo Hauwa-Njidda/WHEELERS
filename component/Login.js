@@ -2,9 +2,35 @@ import React from 'react';
 import { Component } from 'react';
 import { StyleSheet, Text, View ,SafeAreaView, Button ,Image, TextInput, TouchableOpacity } from 'react-native';
 import RegisterScreen from '/Users/hauwakulunjidda/WHEELERS/component/Register.js';
+import Home from '/Users/hauwakulunjidda/WHEELERS/component/Home.js';
 
-export default function LoginScreen({ navigation }) {
- 
+
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
+
+
+const Stack = createNativeStackNavigator();
+
+
+
+const Register = () =>{
+      return (
+         <RegisterScreen/>
+      );
+};
+const HomePage = () =>{
+  return (
+     <Home/>
+  );
+};
+function LoginScreen({ navigation }) {
+  const pressHandler =() =>{
+    navigation.navigate('RegisterScreen');
+  }
+  const pressHandler1 =() =>{
+    navigation.navigate('HomeScreen');
+  }
     return (
       <SafeAreaView style={styles.container}>
 
@@ -15,17 +41,27 @@ export default function LoginScreen({ navigation }) {
         <Text style={styles.Text3}>Forgotten Password?</Text>
 
         <TouchableOpacity style={styles.outside} >
-          <Text style={styles.input1} >
-            Login
-          </Text>
+        <Button title="Login" onPress={(pressHandler1) => navigation.navigate('HomeScreen')}>Login</Button>
         </TouchableOpacity>
-        <Button title="New account? Register" onPress={() => navigation.navigate('RegisterScreen')}>New account? Register</Button>
+        <Button title="New account? Register" onPress={(pressHandler) => navigation.navigate('RegisterScreen')}>New account? Register</Button>
         <Text style={styles.Text4}>Terms and Conditions</Text>
       </SafeAreaView>
  );
     }
-  
+   
 
+    export default function Login() {
+      return (
+        <NavigationContainer independent={true}>
+          <Stack.Navigator>
+          <Stack.Screen name="Login" component={LoginScreen} style={styles.container} />
+          <Stack.Screen name="RegisterScreen" component={Register} style={styles.container} />
+          <Stack.Screen name="HomeScreen" component={HomePage} style={styles.container} />
+          </Stack.Navigator>
+          
+        </NavigationContainer>
+      )
+    }
 const styles = StyleSheet.create({
  container:{
   flex: 1,
