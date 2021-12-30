@@ -1,12 +1,29 @@
 import React from 'react';
 import { StyleSheet, Text, View ,SafeAreaView, Button ,Image, TextInput, TouchableOpacity,ScrollView } from 'react-native';
+import Community from '/Users/hauwakulunjidda/WHEELERS/component/Community.js';
+
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 
-export default function Home() {
+
+const Stack = createNativeStackNavigator();
+
+
+
+const Communitypage = () =>{
+      return (
+         <CommunityScreen/>
+      );
+};
+function HomeScreen({ navigation }) {
+  const pressHandler =() =>{
+    navigation.navigate('CommunityScreen');
+  }
+  
+
     return (
       <SafeAreaView style={styles.container}>
-
-
 <View style = {styles.containersicon}>
 <Image style={styles.icon} source={require("/Users/hauwakulunjidda/WHEELERS/assets/bell.png")} />
 <Image style={styles.icon} source={require("/Users/hauwakulunjidda/WHEELERS/assets/profilee.png")} />
@@ -63,41 +80,36 @@ containersicon}>
 {require('/Users/hauwakulunjidda/WHEELERS/assets/kids_bike_club.jpeg')} style={styles.imageshape2}/>
 <Text style={styles.columnText} allowFontScaling={false}>Join Community</Text>
 <Text style={styles.columnText} allowFontScaling={false}>120 Members</Text>
-
-<Text style={styles.columnText1} allowFontScaling={false}>Join</Text>
-
+<TouchableOpacity style={styles.outside} >
+<Button title="Join" onPress={(pressHandler) => navigation.navigate('CommunityScreen')}>Join</Button>
+</TouchableOpacity>
 </View>
 <View style = {styles.containersicon1}>
 <Image source =
 {require('/Users/hauwakulunjidda/WHEELERS/assets/kids_bike_club.jpeg')} style={styles.imageshape2}/>
 <Text style={styles.columnText} allowFontScaling={false}>Join Community</Text>
 <Text style={styles.columnText} allowFontScaling={false}>120 Members</Text>
-
-<Text style={styles.columnText1} allowFontScaling={false}>Join</Text>
-
+<TouchableOpacity style={styles.outside} >
+<Button title="Join" onPress={(pressHandler) => navigation.navigate('CommunityScreen')}>Join</Button>
+</TouchableOpacity>
 </View>
-
-
-
 </ScrollView>
-
-
-
-
-      </SafeAreaView>
-
-
-
-
-
-      
+      </SafeAreaView>    
  );
 
+}
 
-
+    export default function Home() {
+      return (
+        <NavigationContainer independent={true}>
+          <Stack.Navigator>
+          <Stack.Screen name="Home" component={HomeScreen} style={styles.container} />
+          <Stack.Screen name="CommunityScreen" component={Community} style={styles.container} />
+          </Stack.Navigator>
+          
+        </NavigationContainer>
+      )
     }
-
-
 
 const styles = StyleSheet.create({
  container:{

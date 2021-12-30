@@ -112,4 +112,7 @@ Week 12
 
 22 Dec 2021
 2 hours working on the profile, community page
+
+28 Dec 2021
+3 hours working on navigation help from friend
 Semester Two

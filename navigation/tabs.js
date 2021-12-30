@@ -6,13 +6,14 @@ import Choose from '/Users/hauwakulunjidda/WHEELERS/component/Choose.js';
 import Search from '/Users/hauwakulunjidda/WHEELERS/component/Search.js';
 import Community from '/Users/hauwakulunjidda/WHEELERS/component/Community.js';
 import Profile from '/Users/hauwakulunjidda/WHEELERS/component/Profile.js';
-import Login from '/Users/hauwakulunjidda/WHEELERS/component/Login';
+import Login from '/Users/hauwakulunjidda/WHEELERS/component/Login.js';
 
 
 const Tab = createBottomTabNavigator();
 function MyTabs() {
   return (
     <Tab.Navigator>
+     
       <Tab.Screen name="Login" component={Login}/>
       <Tab.Screen name="Home" component={Home} />
       <Tab.Screen name="Search" component={Search} />

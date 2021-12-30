@@ -1,7 +1,27 @@
 import React from 'react';
 import { StyleSheet, Text, View ,SafeAreaView, Button ,Image, TextInput, TouchableOpacity,ScrollView } from 'react-native';
+import CPage from '/Users/hauwakulunjidda/WHEELERS/component/CPage.js';
 
-export default function Community() {
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
+
+
+const Stack = createNativeStackNavigator();
+const Communi = () =>{
+      return (
+         <CommunityPage/>
+      );    
+};
+
+
+function CommunityScreen({ navigation }) {
+  const pressHandler =() =>{
+    navigation.navigate('CommunityPage');
+  }
+
+
+
     return (
       <SafeAreaView style={styles.container}>
 
@@ -34,18 +54,18 @@ containersicon}>
 {require('/Users/hauwakulunjidda/WHEELERS/assets/cc.jpeg')} style={styles.imageshape2}/>
 <Text style={styles.columnText} allowFontScaling={false}>Join Community</Text>
 <Text style={styles.columnText} allowFontScaling={false}>120 Members</Text>
-
-<Text style={styles.columnText1} allowFontScaling={false}>Join</Text>
-
+<TouchableOpacity style={styles.outside} >
+<Button title="Join" onPress={(pressHandler) => navigation.navigate('CommunityPage')}>Join</Button>
+</TouchableOpacity>
 </View>
 <View style = {styles.containersicon1}>
 <Image source =
 {require('/Users/hauwakulunjidda/WHEELERS/assets/cycl.jpeg')} style={styles.imageshape2}/>
 <Text style={styles.columnText} allowFontScaling={false}>Join Community</Text>
 <Text style={styles.columnText} allowFontScaling={false}>120 Members</Text>
-
-<Text style={styles.columnText1} allowFontScaling={false}>Join</Text>
-
+<TouchableOpacity style={styles.outside} >
+<Button title="Join" onPress={(pressHandler) => navigation.navigate('CommunityPage')}>Join</Button>
+</TouchableOpacity>
 </View>
 <View style = {styles.containersicon1}>
 <Image source =
@@ -53,26 +73,27 @@ containersicon}>
 <Text style={styles.columnText} allowFontScaling={false}>Join Community</Text>
 <Text style={styles.columnText} allowFontScaling={false}>120 Members</Text>
 
-<Text style={styles.columnText1} allowFontScaling={false}>Join</Text>
-
+<TouchableOpacity style={styles.outside} >
+<Button title="Join" onPress={(pressHandler) => navigation.navigate('CommunityPage')}>Join</Button>
+</TouchableOpacity>
 </View>
 <View style = {styles.containersicon1}>
 <Image source =
 {require('/Users/hauwakulunjidda/WHEELERS/assets/cyy.jpeg')} style={styles.imageshape2}/>
 <Text style={styles.columnText} allowFontScaling={false}>Join Community</Text>
 <Text style={styles.columnText} allowFontScaling={false}>120 Members</Text>
-
-<Text style={styles.columnText1} allowFontScaling={false}>Join</Text>
-
+<TouchableOpacity style={styles.outside} >
+<Button title="Join" onPress={(pressHandler) => navigation.navigate('CommunityPage')}>Join</Button>
+</TouchableOpacity>
 </View>
 <View style = {styles.containersicon1}>
 <Image source =
 {require('/Users/hauwakulunjidda/WHEELERS/assets/kids_bike_club.jpeg')} style={styles.imageshape2}/>
 <Text style={styles.columnText} allowFontScaling={false}>Join Community</Text>
 <Text style={styles.columnText} allowFontScaling={false}>120 Members</Text>
-
-<Text style={styles.columnText1} allowFontScaling={false}>Join</Text>
-
+<TouchableOpacity style={styles.outside} >
+<Button title="Join" onPress={(pressHandler) => navigation.navigate('CommunityPage')}>Join</Button>
+</TouchableOpacity>
 </View>
 
 </ScrollView>
@@ -80,6 +101,22 @@ containersicon}>
  );
 
     }
+
+
+    export default function Community() {
+      return (
+        <NavigationContainer independent={true}>
+          <Stack.Navigator>
+          <Stack.Screen name="Community" component={CommunityScreen} style={styles.container} />
+          <Stack.Screen name="CommunityPage" component={CPage} style={styles.container} />
+          </Stack.Navigator>
+          
+        </NavigationContainer>
+      )
+    }
+
+
+
 const styles = StyleSheet.create({
  container:{
   flex: 1,
