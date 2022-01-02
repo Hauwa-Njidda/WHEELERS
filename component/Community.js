@@ -95,14 +95,10 @@ containersicon}>
 <Button title="Join" onPress={(pressHandler) => navigation.navigate('CommunityPage')}>Join</Button>
 </TouchableOpacity>
 </View>
-
 </ScrollView>
       </SafeAreaView>      
  );
-
     }
-
-
     export default function Community() {
       return (
         <NavigationContainer independent={true}>
