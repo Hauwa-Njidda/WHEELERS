@@ -53,8 +53,7 @@ function ChooseScreen({ navigation }) {
             <Stack.Screen name="Choose" component={ChooseScreen} style={styles.container} />
             <Stack.Screen name="SoloScreen" component={Solorun} style={styles.container} />
             <Stack.Screen name="GroupScreen" component={Grouprun} style={styles.container} />
-            </Stack.Navigator>
-            
+            </Stack.Navigator>  
           </NavigationContainer>
         )
       }
