@@ -31,14 +31,21 @@ This illustrates the application and how it works
 file:///Users/hauwakulunjidda/Documents/ezgif.com-gif-maker.gif
 ## Installation
 
-Install WHEELERS with npm
+Install WHEELERS with npm and to get the neccssary package 
+
+
+
 
 ```bash
   npm install WHEELERS
   cd WHEELERS
-  npm start
 ```
     
+```bash
+expo init WHEELERS
+
+npm start
+```
 ## Acknowledgements
 
  - [Awesome Readme Templates](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)
