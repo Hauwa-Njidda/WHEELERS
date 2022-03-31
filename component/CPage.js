@@ -3,12 +3,6 @@ import { StyleSheet, Text, View ,SafeAreaView, Button ,Image, TextInput, Touchab
 
 
 
-
-
-
-
-
-
 export default function CPage() {
     return (
       <SafeAreaView style={styles.container}>

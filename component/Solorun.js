@@ -2,6 +2,7 @@ import React from 'react';
 
 import { StyleSheet, Text, View ,SafeAreaView, Button ,Image, TextInput, TouchableOpacity } from 'react-native';
 
+
 export default function Solorun() {
  
     return (

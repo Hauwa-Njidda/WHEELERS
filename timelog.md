@@ -115,4 +115,33 @@ Week 12
 
 28 Dec 2021
 3 hours working on navigation help from friend
+
+
+
 Semester Two
+
+16 Jan 2022
+2 hours planning on evaluation
+
+17 Jan 2022
+2 hours final evaluation 
+
+22 Jan 2022
+2 hours Dissertaion Work
+
+1 Feb 2022
+3 hours on finalizing work
+
+8 Feb 2022
+2 hours adding more testings
+
+14 Mar 2022
+1 hour with supervisor 
+
+29 Mar 2022
+1 hour prepare for presentation 
+
+31 Mar 2022
+Submission 
+
+
